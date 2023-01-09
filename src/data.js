@@ -1,4 +1,4 @@
-export const animals = [
+const animals = [
   {
     name: 'Betsy the Cow',
     type: 'cow',
@@ -42,3 +42,5 @@ export const animals = [
     left: '20%',
   },
 ];
+
+export default animals;
