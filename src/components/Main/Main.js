@@ -5,10 +5,13 @@ import animals from '../../data.js';
 import background from '../../background.png';
 
 export default function Main() {
-  console.log(Animal);
+  console.log(animals);
   return (
     <main style={{ backgroundImage: `url('${background}')` }}>
-      <Animal prop={animals[1]} />
+      {animals.map((animal) => (
+        <Animal key={animal.name} prop={animal} />
+      ))}
+      ;
     </main>
   );
 }
